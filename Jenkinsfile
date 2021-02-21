@@ -9,7 +9,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://shahid9741@bitbucket.org/shahid9741/tomcat.git'
+                git branch: 'master', url: 'https://github.com/shahid-devops/tomcat.git'
              
           }
         }
