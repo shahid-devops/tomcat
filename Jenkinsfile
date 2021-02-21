@@ -46,14 +46,14 @@ pipeline {
              
             steps 
 			{
-                sh "docker run -d -p 8003:8081 shahid9741/mavenapp"
+                sh "docker run -d -p 8003:8080 shahid9741/mavenapp"
  
             }
         }
  stage('Run Docker container on remote hosts') {
              
             steps {
-                sh "docker -H ssh://jenkins@192.168.0.4 run -d -p 8003:8081 shahid9741/mavenapp"
+                sh "docker -H ssh://jenkins@192.168.0.4 run -d -p 8003:8080 shahid9741/mavenapp"
  
             }
         }
