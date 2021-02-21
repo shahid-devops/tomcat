@@ -46,7 +46,7 @@ pipeline {
              
             steps 
 			{
-                sh "docker run -d -p 8003:8080 shahid9741/mavenapp"
+                sh "docker run -d -p 8003:8081 shahid9741/mavenapp"
  
             }
         }
